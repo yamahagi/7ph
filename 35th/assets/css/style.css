@@ -103,11 +103,47 @@ a:hover {
 }
 .title-box{
     text-align: center;
-    
     margin-bottom: 50px;
+}
+.bb-top-left-w {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-bottom-left-w {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-top-right-w {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.bb-bottom-right-w {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 .bb-top-left {
     position: absolute;
+    background-color: #FFFF00; 
     width: 15px;
     height: 15px;
     top: 0;
@@ -117,6 +153,7 @@ a:hover {
 }
 .bb-bottom-left {
     position: absolute;
+    background-color: #FFFF00; 
     width: 15px;
     height: 15px;
     bottom: 0;
@@ -126,6 +163,7 @@ a:hover {
 }
 .bb-top-right {
     position: absolute;
+    background-color: #FFFF00; 
     width: 15px;
     height: 15px;
     top: 0;
@@ -135,6 +173,7 @@ a:hover {
 }
 .bb-bottom-right {
     position: absolute;
+    background-color: #FFFF00; 
     width: 15px;
     height: 15px;
     bottom: 0;
@@ -291,9 +330,11 @@ a:hover {
 .logo {
     font-family: 'caviar_dreams';
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.0em;
     line-height: 1.6;
 }
+
+
 #logo_menu {
     padding: 5px 0px;
 }
@@ -326,6 +367,20 @@ a:hover {
     padding-top: 180px;
     background-attachment: fixed;
     position: relative;
+}
+
+@media only screen and (max-width: 767px){
+    #banner{
+    background-image: url(../img/group3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40% 100px;
+    background-clip: border-box;
+    background-origin: round;
+    background-attachment: fixed;
+    padding-top: 180px;
+    position: relative;}
+
 }
 
 .headings {
@@ -374,7 +429,7 @@ a:hover {
 .feature-box {
     padding: 30px 0px;
     text-align: center;
-    max-width: 360px;
+    max-width: 720px;
     margin: 0 auto;
 }
 .feature-box i {
@@ -384,7 +439,8 @@ a:hover {
     padding: 0;
 }
 .feature-box p {
-    padding: 0px 20px;
+    font-size: 1.5em;
+    padding: 0;
 }
 .feature-box h2 {
     margin: 0;
@@ -399,7 +455,7 @@ a:hover {
 
 
 #gallery{
-    background: url(../img/gallery-bg.png) no-repeat;
+    background: url(../img/boy_getaway.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -446,6 +502,31 @@ a:hover {
 //  09 - Team Member
 /////////////////////////////////////////////////////////////////////*/
 
+#team{
+background: url(../img/ねこ.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 767px){
+    #team{
+    background-size: contain;
+    background-position: 40% 0%;
+    background-clip: border-box;
+    background-origin: round;
+    background-attachment: fixed;
+    padding-top: 180px;
+    position: relative;}
+
+}
+
+.team_back {
+    width: 30%;
+    float: left;
+    background: url(../img/gmap-bg.jpg);
+    height: 640px;
+}
+
 .team-social {
     margin: 0;
     padding: 8px 0px;
@@ -469,6 +550,7 @@ a:hover {
     margin-bottom: 40px;
 }
 .team-member p {
+    font-size: 30px;
     padding: 10px 10px 15px 10px;
 }
 .team-member h2 {
@@ -537,20 +619,23 @@ a:hover {
 }
 .client-pic {
     padding: 0em 2em;
-    max-width: 360px;
+    width=400px;
+ height=200px;
     margin: 0 auto;
 }
 .client-pic img {
-    border-radius: 50%;
+width=400px;
+ height=200px;
 }
 
 .review-desc {
+    text-align: center;
     font-size: 24px;
     line-height: 1.8;
     font-weight: 100;
     font-style: italic;
     padding-top: 20px;
-    color: #fff;
+    color: #000;
 }
 #testimonial .block-title {
     color: #fff;
@@ -619,17 +704,16 @@ p.client-name {
 
 
 .address {
-    width: 30%;
+    width: 70%;
     float: left;
     background: url(../img/gmap-bg.jpg);
     height: 640px;
 }
 .mailbox {
-    width: 70%;
+    width: 30%;
     float: left;
     background-image: url(../img/map-image.png);
     background-color: #222;
-    padding-bottom: 111px;
     height: 640px;
 }
 .address .container {
@@ -670,7 +754,7 @@ p.client-name {
     vertical-align: middle;
 }
 .mailbox .container {
-    margin-top: 225px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 #contactForm input,#contactForm textarea {
